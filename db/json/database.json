@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "title": "Latihan 1 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_first.png",
+    "file": "assets/img/2D Sketch/2d_first.png",
+    "description": "Latihan Pertama",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-07-21",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Latihan 2 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_second.png",
+    "file": "assets/img/2D Sketch/2d_second.png",
+    "description": "Latihan kedua",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-07-22",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Latihan 3 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_third.png",
+    "file": "assets/img/2D Sketch/2d_third.png",
+    "description": "Latihan ketiga",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-07-22",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Latihan 4 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_fourth.png",
+    "file": "assets/img/2D Sketch/2d_fourth.png",
+    "description": "Latihan keempat",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-12",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Latihan 5 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_fifth.png",
+    "file": "assets/img/2D Sketch/2d_fifth.png",
+    "description": "Latihan kelima",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-14",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Latihan 6 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_sixth.png",
+    "file": "assets/img/2D Sketch/2d_sixth.png",
+    "description": "Latihan keenam",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-14",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Latihan 7 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_seventh.png",
+    "file": "assets/img/2D Sketch/2d_seventh.png",
+    "description": "Latihan ketujuh",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-15",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Latihan 8 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_eighth.png",
+    "file": "assets/img/2D Sketch/2d_eighth.png",
+    "description": "Latihan kedelapan",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-16",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 9,
+    "title": "Latihan 9 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_ninth.png",
+    "file": "assets/img/2D Sketch/2d_ninth.png",
+    "description": "Latihan kesembilan",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-16",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 10,
+    "title": "Latihan 10 2D",
+    "type": "2d",
+    "thumbnail": "assets/img/2D Sketch/2d_tenth.png",
+    "file": "assets/img/2D Sketch/2d_tenth.png",
+    "description": "Latihan kesepuluh",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-16",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 11,
+    "title": "Latihan 1 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_first.png",
+    "file": "db/cad/3d_first.glb",
+    "description": "Latihan pertama 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-16",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 12,
+    "title": "Latihan 2 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_second.png",
+    "file": "db/cad/3d_second.glb",
+    "description": "Latihan kedua 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-16",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 13,
+    "title": "Latihan 3 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_third.png",
+    "file": "db/cad/3d_third.glb",
+    "description": "Latihan ketiga 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-16",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 14,
+    "title": "Latihan 4 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_fourth.png",
+    "file": "db/cad/3d_fourth.glb",
+    "description": "Latihan keempat 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-17",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 15,
+    "title": "Latihan 5 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_fifth.png",
+    "file": "db/cad/3d_fifth.glb",
+    "description": "Latihan kelima 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-17",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 16,
+    "title": "Latihan 6 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_sixth.png",
+    "file": "db/cad/3d_sixth.glb",
+    "description": "Latihan keenam 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-17",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 17,
+    "title": "Latihan 7 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_seventh.png",
+    "file": "db/cad/3d_seventh.glb",
+    "description": "Latihan ketujuh 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-18",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 18,
+    "title": "Latihan 8 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_eighth.png",
+    "file": "db/cad/3d_eighth.glb",
+    "description": "Latihan kedelapan 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-18",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 19,
+    "title": "Latihan 9 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_ninth.png",
+    "file": "db/cad/3d_ninth.glb",
+    "description": "Latihan kesembilan 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-18",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 20,
+    "title": "Latihan 10 3D",
+    "type": "3d",
+    "thumbnail": "assets/img/thumbnail/3d_tenth.png",
+    "file": "db/cad/3d_tenth.glb",
+    "description": "Latihan kesepuluh 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-18",
+      "kategori": "Technical Modeling"
+    }
+  },
+  {
+    "id": 21,
+    "title": "Bowl",
+    "type": "3d",
+    "thumbnail": "",
+    "file": "db/cad/bowl.glb",
+    "description": "Membuat mangkok melalui 2D lalu dilanjutkan menjadi 3D",
+    "details": {
+      "software": "CorelCAD",
+      "tanggal": "2025-08-18",
+      "kategori": "Technical Modeling"
+    }
+  }
+]

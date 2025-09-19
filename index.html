@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | The Digital Blueprint</title>
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon" />
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Model Viewer Library -->
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"
+    ></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="logo"><span>R2Z</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero">
+        <div class="hero-content">
+          <h1>Proyek Gambar Teknik</h1>
+        </div>
+      </section>
+
+      <section id="design">
+        <div class="container">
+          <h2>Portofolio Proyek</h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="3d">Desain 3D</button>
+            <button class="filter-btn" data-filter="2d">Gambar 2D</button>
+          </div>
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Item proyek akan dimuat di sini oleh JavaScript -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside id="project-panel">
+      <button class="panel-close-btn" id="panel-close-btn">&times;</button>
+      <div id="panel-dynamic-content">
+        <!-- Konten dinamis (viewer, judul, deskripsi) akan dimuat di sini -->
+      </div>
+    </aside>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
