@@ -3,8 +3,8 @@
     "id": 1,
     "title": "Latihan 1 2D",
     "type": "2d",
-    "thumbnail": "assets/img/2D Sketch/2d_first.png",
-    "file": "assets/img/2D Sketch/2d_first.png",
+    "thumbnail": "assets/img/2D Sketch/2d_first.PNG",
+    "file": "assets/img/2D Sketch/2d_first.PNG",
     "description": "Latihan Pertama",
     "details": {
       "software": "CorelCAD",
@@ -273,3 +273,4 @@
     }
   }
 ]
+
