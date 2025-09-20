@@ -134,7 +134,7 @@
     "title": "Latihan 1 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_first.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_First.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_First.PNG",
     "file": "db/cad/3d_first.GLB",
     "description": "Latihan pertama 3D",
     "details": {
