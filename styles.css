@@ -13,11 +13,9 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--bg-color);
@@ -26,21 +24,19 @@ body {
   overflow-x: hidden;
   transition: overflow 0.3s ease;
 }
-
 body.panel-open {
   overflow: hidden;
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
 section {
   padding: 6rem 0;
 }
 
+/* Header */
 .main-header {
   position: sticky;
   top: 0;
@@ -51,49 +47,25 @@ section {
   z-index: 1000;
   padding: 1rem 0;
 }
-
 .main-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   font-weight: 700;
   font-size: 1.5rem;
   text-decoration: none;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.logo-text {
+  margin-left: 10px;
+  vertical-align: middle;
 }
 
-.logo span {
-  color: var(--accent-color);
-}
-
-.main-nav a {
-  color: var(--text-color);
-  text-decoration: none;
-  margin-left: 2rem;
-  font-weight: 500;
-  position: relative;
-  padding-bottom: 0.25rem;
-}
-
-.main-nav a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--accent-color);
-  transition: width 0.3s ease;
-}
-
-.main-nav a:hover::after,
-.main-nav a:focus::after {
-  width: 100%;
-}
-
+/* Hero Section */
 #hero {
   min-height: calc(100vh - 80px);
   display: flex;
@@ -103,11 +75,9 @@ section {
   padding-top: 0;
   padding-bottom: 0;
 }
-
 .hero-content {
   max-width: 800px;
 }
-
 .hero-content h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -115,24 +85,17 @@ section {
   line-height: 1.2;
 }
 
-.hero-content p {
-  font-size: 1.25rem;
-  color: #6c757d;
-}
-
+/* Portfolio Section */
 #portfolio .container {
   text-align: center;
 }
-
 #portfolio h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
 }
-
 .filter-buttons {
   margin-bottom: 3rem;
 }
-
 .filter-btn {
   background: none;
   border: 1px solid var(--border-color);
@@ -145,26 +108,18 @@ section {
   font-weight: 500;
   transition: all 0.3s ease;
 }
-
-.filter-btn:hover {
-  background-color: var(--accent-color);
-  color: white;
-  border-color: var(--accent-color);
-}
-
+.filter-btn:hover,
 .filter-btn.active {
   background-color: var(--accent-color);
   color: white;
   border-color: var(--accent-color);
 }
-
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   text-align: left;
 }
-
 .project-item {
   cursor: pointer;
   overflow: hidden;
@@ -173,23 +128,19 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: white;
 }
-
 .project-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
-
 .project-item-thumbnail {
   width: 100%;
   height: 250px;
   object-fit: cover;
   display: block;
 }
-
 .project-item-title {
   padding: 1.5rem;
 }
-
 .project-item-title h3 {
   margin-bottom: 0.25rem;
   font-size: 1.2rem;
@@ -199,6 +150,7 @@ section {
   font-size: 0.9rem;
 }
 
+/* Slide-Out Panel */
 #project-panel {
   position: fixed;
   top: 0;
@@ -214,11 +166,9 @@ section {
   display: flex;
   flex-direction: column;
 }
-
 #project-panel.is-open {
   transform: translateX(0);
 }
-
 .panel-close-btn {
   position: absolute;
   top: 1rem;
@@ -231,13 +181,12 @@ section {
   line-height: 1;
   z-index: 10;
 }
-
 .panel-viewer {
   width: 100%;
   min-height: 40%;
   background-color: #e9ecef;
+  position: relative;
 }
-
 .panel-viewer model-viewer,
 .panel-viewer img {
   width: 100%;
@@ -250,12 +199,10 @@ section {
 .panel-content {
   padding: 2.5rem;
 }
-
 .panel-content h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 .panel-content h3 {
   font-size: 1.2rem;
   margin-top: 2rem;
@@ -264,32 +211,31 @@ section {
   padding-bottom: 0.5rem;
   display: inline-block;
 }
-
 .panel-content p {
   color: #495057;
   margin-bottom: 1rem;
 }
-
 .tech-details {
   list-style: none;
   padding: 0;
 }
-
 .tech-details li {
   margin-bottom: 0.5rem;
 }
-
 .tech-details strong {
   display: inline-block;
   width: 100px;
 }
 
-#about {
-  background-color: #fff;
+/* New styles for the blueprint section */
+.blueprint-section {
+  margin-top: 2.5rem;
 }
-#about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+.blueprint-section img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -300,15 +246,10 @@ section {
     font-size: 3rem;
   }
 }
-
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  .main-nav {
-    display: none;
-  }
-
   #project-panel {
     top: auto;
     bottom: 0;
@@ -316,15 +257,12 @@ section {
     height: 100%;
     transform: translateY(100%);
   }
-
   #project-panel.is-open {
     transform: translateY(0);
   }
-
   .panel-viewer {
     min-height: 250px;
   }
-
   .panel-content {
     padding: 2rem 1.5rem;
   }

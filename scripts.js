@@ -7,42 +7,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let allProjects = [];
 
-  /**
-   * Menampilkan proyek di dalam grid.
-   */
+  const getProjectTypeLabel = (type) => {
+    switch (type) {
+      case "3d":
+        return "Desain 3D";
+      case "2d":
+        return "Gambar 2D";
+      default:
+        return type;
+    }
+  };
+
   const displayProjects = (projectsToDisplay) => {
     portfolioGrid.innerHTML = "";
     projectsToDisplay.forEach((project) => {
       const projectElement = document.createElement("div");
-      projectElement.classList.add("project-item");
+      projectElement.className = "project-item";
       projectElement.dataset.id = project.id;
-      const typeLabel = project.type === "3d" ? "Desain 3D" : "Gambar 2D";
-
       projectElement.innerHTML = `
-                        <img src="${project.thumbnail}" alt="${project.title}" class="project-item-thumbnail">
+                        <img src="${project.thumbnail}" alt="${
+        project.title
+      }" class="project-item-thumbnail">
                         <div class="project-item-title">
                             <h3>${project.title}</h3>
-                            <span>${typeLabel}</span>
+                            <span>${getProjectTypeLabel(project.type)}</span>
                         </div>
                     `;
       portfolioGrid.appendChild(projectElement);
     });
   };
 
-  /**
-   * Membuka panel detail, menampilkan viewer 3D atau gambar 2D.
-   */
   const openPanel = (project) => {
     let viewerHtml = "";
+    // Hanya buat viewer berdasarkan tipe utama (3D atau 2D)
     if (project.type === "3d") {
-      viewerHtml = `
-                        <model-viewer src="${project.file}" alt="${project.title}" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="${project.thumbnail}" shadow-intensity="1" auto-rotate></model-viewer>
-                    `;
-    } else {
-      // type is '2d'
+      viewerHtml = `<model-viewer src="${project.file}" poster="${project.thumbnail}" alt="${project.title}" camera-controls auto-rotate ar shadow-intensity="1"></model-viewer>`;
+    } else if (project.type === "2d") {
       viewerHtml = `<img src="${project.file}" alt="${project.title}">`;
     }
 
+    // Siapkan HTML untuk kerangka 2D, tapi hanya jika ada datanya
+    let blueprintHtml = "";
+    if (project.blueprintImage) {
+      blueprintHtml = `
+                        <div class="blueprint-section">
+                            <h3>Kerangka 2D</h3>
+                            <img src="${project.blueprintImage}" alt="Kerangka ${project.title}">
+                        </div>
+                    `;
+    }
+
+    // Gabungkan semua bagian HTML untuk panel
     panelDynamicContent.innerHTML = `
                     <div class="panel-viewer">${viewerHtml}</div>
                     <div class="panel-content">
@@ -55,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <li><strong>Tanggal:</strong> ${project.details.tanggal}</li>
                             <li><strong>Kategori:</strong> ${project.details.kategori}</li>
                         </ul>
+                        ${blueprintHtml}
                     </div>
                 `;
 
@@ -62,65 +78,46 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("panel-open");
   };
 
-  /**
-   * Menutup panel detail.
-   */
   const closePanel = () => {
     projectPanel.classList.remove("is-open");
     document.body.classList.remove("panel-open");
   };
 
-  /**
-   * Mengatur semua event listener.
-   */
   const setupEventListeners = (projects) => {
     filterButtonsContainer.addEventListener("click", (e) => {
-      const target = e.target;
-      if (target.tagName === "BUTTON") {
+      if (e.target.tagName === "BUTTON") {
         filterButtonsContainer
           .querySelector(".active")
           .classList.remove("active");
-        target.classList.add("active");
-
-        const filter = target.dataset.filter;
-        const filteredProjects = projects.filter((project) => {
-          if (filter === "all") return true;
-          return project.type === filter;
-        });
+        e.target.classList.add("active");
+        const filter = e.target.dataset.filter;
+        const filteredProjects = projects.filter(
+          (p) => filter === "all" || p.type === filter
+        );
         displayProjects(filteredProjects);
       }
     });
 
     portfolioGrid.addEventListener("click", (e) => {
-      const clickedItem = e.target.closest(".project-item");
-      if (clickedItem) {
-        const projectId = parseInt(clickedItem.dataset.id);
-        const selectedProject = projects.find((p) => p.id === projectId);
-        if (selectedProject) {
-          openPanel(selectedProject);
-        }
+      const item = e.target.closest(".project-item");
+      if (item) {
+        const projectId = parseInt(item.dataset.id);
+        const project = projects.find((p) => p.id === projectId);
+        if (project) openPanel(project);
       }
     });
 
     panelCloseBtn.addEventListener("click", closePanel);
-
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape" && projectPanel.classList.contains("is-open")) {
+      if (e.key === "Escape" && projectPanel.classList.contains("is-open"))
         closePanel();
-      }
     });
   };
 
-  /**
-   * Inisialisasi: Mengambil data dari JSON dan memulai aplikasi.
-   */
   fetch("db/json/database.json")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok " + response.statusText);
-      }
-      return response.json();
-    })
+    .then((response) =>
+      response.ok ? response.json() : Promise.reject("Failed to load")
+    )
     .then((data) => {
       allProjects = data;
       displayProjects(allProjects);
