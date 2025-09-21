@@ -134,7 +134,7 @@
     "title": "Latihan 1 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_first.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_First.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_first.PNG",
     "file": "db/cad/3d_first.GLB",
     "description": "Latihan pertama 3D",
     "details": {
@@ -148,7 +148,7 @@
     "title": "Latihan 2 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_second.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Second.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_second.PNG",
     "file": "db/cad/3d_second.GLB",
     "description": "Latihan kedua 3D",
     "details": {
@@ -162,7 +162,7 @@
     "title": "Latihan 3 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_third.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Third.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_third.PNG",
     "file": "db/cad/3d_third.GLB",
     "description": "Latihan ketiga 3D",
     "details": {
@@ -176,7 +176,7 @@
     "title": "Latihan 4 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_fourth.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Fourth.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_fourth.PNG",
     "file": "db/cad/3d_fourth.GLB",
     "description": "Latihan keempat 3D",
     "details": {
@@ -190,7 +190,7 @@
     "title": "Latihan 5 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_fifth.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Fifth.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_fifth.PNG",
     "file": "db/cad/3d_fifth.GLB",
     "description": "Latihan kelima 3D",
     "details": {
@@ -204,7 +204,7 @@
     "title": "Latihan 6 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_sixth.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Sixth.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_sixth.PNG",
     "file": "db/cad/3d_sixth.GLB",
     "description": "Latihan keenam 3D",
     "details": {
@@ -284,3 +284,4 @@
     }
   }
 ]
+
