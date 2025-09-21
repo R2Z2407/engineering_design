@@ -148,7 +148,7 @@
     "title": "Latihan 2 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_second.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Second.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_Second.PNG",
     "file": "db/cad/3d_second.GLB",
     "description": "Latihan kedua 3D",
     "details": {
@@ -162,7 +162,7 @@
     "title": "Latihan 3 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_third.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Third.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_Third.PNG",
     "file": "db/cad/3d_third.GLB",
     "description": "Latihan ketiga 3D",
     "details": {
@@ -176,7 +176,7 @@
     "title": "Latihan 4 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_fourth.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Fourth.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_Fourth.PNG",
     "file": "db/cad/3d_fourth.GLB",
     "description": "Latihan keempat 3D",
     "details": {
@@ -190,7 +190,7 @@
     "title": "Latihan 5 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_fifth.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Fifth.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_Fifth.PNG",
     "file": "db/cad/3d_fifth.GLB",
     "description": "Latihan kelima 3D",
     "details": {
@@ -204,7 +204,7 @@
     "title": "Latihan 6 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_sixth.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Sixth.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_Sixth.PNG",
     "file": "db/cad/3d_sixth.GLB",
     "description": "Latihan keenam 3D",
     "details": {
@@ -218,7 +218,7 @@
     "title": "Latihan 7 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_seventh.PNG",
-    "blueprintImage": "assets/img/3D Sketch/3D_Seventh.png",
+    "blueprintImage": "assets/img/3D Sketch/3D_seventh.PNG",
     "file": "db/cad/3d_seventh.GLB",
     "description": "Latihan ketujuh 3D",
     "details": {
@@ -232,6 +232,7 @@
     "title": "Latihan 8 3D",
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_eighth.PNG",
+    "blueprintImage": "assets/img/3D Sketch/3D_eighth.PNG",
     "file": "db/cad/3d_eighth.GLB",
     "description": "Latihan kedelapan 3D",
     "details": {
@@ -246,7 +247,7 @@
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_ninth.PNG",
     "file": "db/cad/3d_ninth.GLB",
-    "blueprintImage": "https://placehold.co/1200x800/212529/FFFFFF?text=Kerangka+Interior+2D",
+    "blueprintImage": "assets/img/3D Sketch/3D_ninth.PNG",
     "description": "Latihan kesembilan 3D",
     "details": {
       "software": "CorelCAD",
@@ -260,7 +261,7 @@
     "type": "3d",
     "thumbnail": "assets/img/thumbnail/3d_tenth.PNG",
     "file": "db/cad/3d_tenth.GLB",
-    "blueprintImage": "https://placehold.co/1200x800/212529/FFFFFF?text=Kerangka+Interior+2D",
+    "blueprintImage": "assets/img/3D Sketch/3D_tenth.PNG",
     "description": "Latihan kesepuluh 3D",
     "details": {
       "software": "CorelCAD",
@@ -272,9 +273,9 @@
     "id": 21,
     "title": "Bowl",
     "type": "3d",
-    "thumbnail": "",
+    "thumbnail": "assets/img/thumbnail/3D_bowl.PNG",
     "file": "db/cad/bowl.GLB",
-    "blueprintImage": "https://placehold.co/1200x800/212529/FFFFFF?text=Kerangka+Rover+2D",
+    "blueprintImage": "assets/img/3D Sketch/3D_bowl.PNG",
     "description": "Membuat mangkok melalui 2D lalu dilanjutkan menjadi 3D",
     "details": {
       "software": "CorelCAD",
