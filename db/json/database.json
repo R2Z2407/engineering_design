@@ -273,7 +273,7 @@
     "id": 21,
     "title": "Bowl",
     "type": "3d",
-    "thumbnail": "assets/img/thumbnail/3D_bowl.PNG",
+    "thumbnail": "assets/img/thumbnail/3d_bowl.PNG",
     "file": "db/cad/bowl.GLB",
     "blueprintImage": "assets/img/3D Sketch/3D_bowl.PNG",
     "description": "Membuat mangkok melalui 2D lalu dilanjutkan menjadi 3D",
@@ -284,4 +284,5 @@
     }
   }
 ]
+
 
